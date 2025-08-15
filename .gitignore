@@ -1,0 +1,49 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+./backend/env
+.env
+.env.*.local
+
+# Logs
+logs
+*.log
+logs/*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+tmp
+temp
+*.tmp
+*.temp
+
+# Build output
+dist/
+build/
+
+# Coverage (from testing tools like Jest)
+coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.suo
+.ntvs
+*.njsproj
+*.sln
+
+# Docker
+docker-compose.override.yml
+public/
