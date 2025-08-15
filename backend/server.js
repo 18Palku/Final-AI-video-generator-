@@ -685,6 +685,9 @@ db.serialize(() => {
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )`);
 });
+db.run(`ALTER TABLE tiktok_accounts ADD COLUMN password TEXT`, () => {
+    console.log('[DATABASE] ✅ Password column ready');
+});
 
 // Real TikTok Upload Function
 async function uploadToRealTikTok(videoPath, caption, username, password) {
